@@ -41,7 +41,7 @@ sim.master = function(p_min, p_max, num_ev, num_rep = 10, num_y = 100){
     res.ordered_bias_RegPA = array(NA, dim = c(num_iterations, num_comparisons, num_methods))
     res.ordered_bias_IdA = array(NA, dim = c(num_iterations, num_comparisons, num_methods))
     
-    set.seed(2) ###
+    set.seed(2) ### for reproducibility
     ev_pre = runif_simplex(num_ev, p, p)
     res.ev = data.frame(matrix(0, nrow = num_ev, ncol = p + 1))
     res.vif = data.frame(matrix(0, nrow = num_rep * num_ev, ncol = p + 2))
