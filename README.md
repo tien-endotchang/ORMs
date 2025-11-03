@@ -7,7 +7,7 @@ All scripts and their purposes are summarized below.
 
 ---
 
-## 📁 Scripts Overview
+## Scripts Overview
 
 ### `sim.R`
 - Performs comprehensive Monte Carlo simulations across all **four orthogonalization** and **four reallocation** methods.  
@@ -37,8 +37,7 @@ To fully reproduce the results from our study, run the scripts in the following 
 source("sim.R")
 source("plot.R")
 source("example.R")
-
----
+```
 
 ## Using Saved Data
 If you prefer not to rerun the full simulation:
