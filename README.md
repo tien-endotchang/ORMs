@@ -10,22 +10,22 @@ All scripts and their purposes are summarized below.
 ## Scripts Overview
 
 1. `sim.R`
-- Performs comprehensive Monte Carlo simulations across all **four orthogonalization** and **four reallocation** methods.  
-- **Output:** Automatically creates a `res/` folder containing the simulation results.
+ - Performs comprehensive Monte Carlo simulations across all **four orthogonalization** and **four reallocation** methods.  
+ - **Output:** Automatically creates a `res/` folder containing the simulation results.
 
-### `plot.R`
+2. `plot.R`
 - Generates **Figures 4 – 10** and **Table 1** from the paper.  
 - **Output:** Plots and tables are saved to the `fig/` directory.
 
-### `example.R`
-- Reproduces **Tables 3 and 4**.  
-- **Output:** Tables are saved to the `fig/` directory.
+3. `example.R`
+ - Reproduces **Tables 3 and 4**.  
+ - **Output:** Tables are saved to the `fig/` directory.
 
-### `utils_sim.R`
-- Helper functions for the simulation routines (`sim.R`).
+4. `utils_sim.R`
+ - Helper functions for the simulation routines (`sim.R`).
 
-### `utils_plot.R`
-- Helper functions used for generating and formatting plots (`plot.R`).
+5. `utils_plot.R`
+ - Helper functions used for generating and formatting plots (`plot.R`).
 
 ---
 
