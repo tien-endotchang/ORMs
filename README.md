@@ -10,8 +10,8 @@ All scripts and their purposes are summarized below.
 ## Scripts Overview
 
 1. `sim.R`
- - Performs comprehensive Monte Carlo simulations across all **four orthogonalization** and **four reallocation** methods.  
- - **Output:** Automatically creates a `res/` folder containing the simulation results.
+  - Performs comprehensive Monte Carlo simulations across all **four orthogonalization** and **four reallocation** methods.  
+  - **Output:** Automatically creates a `res/` folder containing the simulation results.
 
 2. `plot.R`
 - Generates **Figures 4 – 10** and **Table 1** from the paper.  
