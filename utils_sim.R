@@ -123,10 +123,10 @@ resArr2Long = function(resArr, p, p_min=NULL, metric = c("bias", "tau"),
       long.temp$Z = "Johnson"
     }
     if(i == 2){
-      long.temp$Z = "PC"
+      long.temp$Z = "GS"
     }
     if(i == 3){
-      long.temp$Z = "GS"
+      long.temp$Z = "PC"
     }
     if(i == 4){
       long.temp$Z = "VM"

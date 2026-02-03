@@ -78,11 +78,12 @@ plot_bias_Z.J_All.reA_wrap = function(result, y.axis){
   p = ggplot(data = result, aes(x = variable, y = value)) +
     geom_hline(yintercept = 0, linetype = "dashed", color = "#000000", linewidth = 1) +
     geom_boxplot_pattern(
-      aes(pattern = Method,
-          pattern_angle = Method,
-          pattern_density = Method),
+      aes(
+        pattern = Method,
+        pattern_angle = Method,
+        pattern_density = Method),
       pattern_colour  = 'black', 
-      alpha = 0.75,
+      # alpha = 0.75,
       outlier.size = 1,
       outlier.alpha = 0.3,
       position = position_dodge(width = 0.85)) +
@@ -97,7 +98,7 @@ plot_bias_Z.J_All.reA_wrap = function(result, y.axis){
                                                                            "7" = "p = 7",
                                                                            "10" = "p = 10"))) +
     
-    labs(x = "the i-th important predictor variable", y = y.axis, fill = "OT") +
+    labs(x = "the i-th important predictor variable", y = y.axis) +
     theme(text = element_text(size = 15)) +
 
     stat_summary(

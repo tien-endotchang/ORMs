@@ -104,9 +104,9 @@ sim.master = function(p_min, p_max, num_ev, num_rep = 10, num_y = 100){
           beta_Z_vm = as.numeric( t(Q_vm) %*% (V %*% diag(invSqrtD) %*% t(V)) %*% ryx )
           
           epsilon = as.numeric((CorPA) %*% beta_Z^2)
-          epsilon_pc = as.numeric((CorPA_Zpc) %*% beta_Z^2)
-          epsilon_G = as.numeric((CorPA_ZG) %*% beta_Z^2)
-          epsilon_vm = as.numeric((CorPA_Zvm) %*% beta_Z^2)
+          epsilon_pc = as.numeric((CorPA_Zpc) %*% beta_Z_pc^2) 
+          epsilon_G = as.numeric((CorPA_ZG) %*% beta_Z_G^2)
+          epsilon_vm = as.numeric((CorPA_Zvm) %*% beta_Z_vm^2)
           
           GDA = as.numeric((GD_ZX) %*% beta_Z^2)
           GDA_pc = as.numeric((GD_ZpcX) %*% beta_Z_pc^2)
@@ -114,9 +114,9 @@ sim.master = function(p_min, p_max, num_ev, num_rep = 10, num_y = 100){
           GDA_vm = as.numeric((GD_ZvmX) %*% beta_Z_vm^2)
           
           delta = as.numeric(RegPA %*% beta_Z^2)
-          delta_pc = as.numeric(RegPA_Zpc %*% beta_Z^2)
-          delta_G = as.numeric(RegPA_ZG %*% beta_Z^2)
-          delta_vm = as.numeric(RegPA_Zvm %*% beta_Z^2)
+          delta_pc = as.numeric(RegPA_Zpc %*% beta_Z_pc^2)
+          delta_G = as.numeric(RegPA_ZG %*% beta_Z_G^2)
+          delta_vm = as.numeric(RegPA_Zvm %*% beta_Z_vm^2)
           ### COR ONLY ###
           
           # estimating bias

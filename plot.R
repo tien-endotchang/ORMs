@@ -413,6 +413,7 @@ fig10 = ggplot(all_plot_data, aes(x = ev1.sqp_bin, y = proportion, fill = WinLos
     values = c("GCD wins" = "#4C72B0", "tie" = "#999999", "RW wins" = "#C44E52"),
     limits = c("GCD wins", "tie", "RW wins")
   ) +
+  geom_vline(xintercept = 3.5, linetype = "dashed", color = "black") +  # Add the dashed vertical line
   facet_grid(rows = vars(p), cols = vars(metric)) +
   theme_bw() +
   theme(
