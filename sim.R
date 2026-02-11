@@ -254,9 +254,12 @@ sim.master = function(p_min, p_max, num_ev, num_rep = 10, num_y = 100){
 }
 
 ################################
-folder_name = "res" 
+folder_name = "res"
 dir.create("res")
 setwd(paste0("./", folder_name))
+# folder_name = "Rtmp"
+# dir.create("C:/Rtmp")
+# setwd(paste0("C:/Rtmp"))
 num_rep = 10
 num_y = 100
 
